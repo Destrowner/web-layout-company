@@ -1,0 +1,285 @@
+@media screen and (max-width: 1600px) {
+	.logo {
+		flex-basis: 10%
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.feedback__workers {
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1350px) {
+	.feedback__content {
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.feedback__slider, .feedback__workers {
+		flex-basis: calc(50% - 50px)
+	}
+
+	.feedback__workers {
+		margin-left: 0;
+		height: 400px;
+	}
+
+	.feedback__workers:nth-of-type(3) {
+		margin-top: 100px;
+	}
+	.feedback__workers:nth-of-type(4) {
+		margin-top: 100px;
+	}
+
+	footer nav a {
+		font-size: 16px;
+	}
+	
+	footer nav h2 {
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+	
+	.footer__form__subscribe input {
+		font-size: 16px;
+	}
+
+	.footer__form__links {
+		font-size: 20px;
+	}
+	
+	.footer__form__links a {
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	header {
+		height: 85px;
+		justify-content: space-between;
+	}
+
+	.main__social-icons {
+		display: none;
+	}
+
+	header	nav {
+		max-width: 156px;
+		background-color: rgba(55, 55, 55, .5);
+		z-index: 9999;
+		top: 85px;
+		left: 0;
+		position: absolute;
+		transform: translateX(-500%);
+		display: block !important;
+	}
+
+	header nav a {
+		padding: 15px 30px;
+	}
+
+	.show {
+		transform: translateX(0);
+		transition: transform .3s ease-out;
+	}
+
+	.nav-dropdown {
+		height: auto;
+	}
+
+	.nav-dropdown a {
+		padding: 15px 0;
+	}
+
+	.dropdown-links {
+		border-left: 1px solid #808080;
+		max-width: 156px;
+		width: 100%;
+		background-color: rgba(55, 55, 55, .5);
+		top: 15px;
+		left: 156px;
+		flex-direction: column;
+	}
+
+	.dropdown-links a {
+		display: block;
+	}
+
+	#menuToggle {
+		display: flex;
+	}
+
+	form {
+		flex-wrap: wrap;
+		justify-content: flex-end;
+	}
+	
+	form input[type=text], input[type=tel] {
+		border-right:  1px solid #9D9D9D;
+		margin-bottom: 30px;
+		border-radius: 5px;
+	}
+	
+	form input[type=submit] {
+		border-radius: 5px;
+		border-left: 1px solid #9D9D9D;
+	}
+
+	.contacts__details {
+		flex-basis: 60%;
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.about__bg-image {
+		display: none;
+	}
+
+	.about__article {
+		flex-basis: 100%;
+	}
+
+	.content__header, .content__header-light {
+		padding: 50px 0;
+	}
+	
+	.content__header::after, .content__header::before, .content__header-light::after, .content__header-light::before {
+		width: 15%;
+	}
+	
+	.content__header h1, .content__header-light h1 {
+		font-size: 28px;
+	}
+	
+	.content__header h1::after, .content__header h1::before, .content__header-light h1::after, .content__header-light h1::before {
+		width: 80px;
+	}
+
+	.feedback__slider, .feedback__workers {
+		flex-basis: calc(50% - 25px);
+	}
+	
+	.feedback__workers {
+		margin-left: 0;
+		height: 250px;
+	}
+
+	.contacts__details h1 {
+		font-size: 28px;
+	}
+	
+	.contacts__details p {
+		font-size: 18px;
+	}
+	
+	form input {
+		font-size: 18px;
+	}
+
+	.contacts {
+		padding: 50px;
+	}
+
+	footer {
+		flex-wrap: wrap;
+	}
+
+	.footer__form {
+		flex-basis: 100%;
+		padding: 0;
+	}
+
+	.footer__form__links {
+		margin: 0 auto;
+		width: 50%;
+		position: static;
+		padding: 0;
+	}
+
+	.footer__form__subscribe {
+		margin: 70px 0;
+	}
+
+	.footer__form__subscribe input[type=email] {
+		padding: 20px;
+		min-width: 330px;
+		max-width: 400px;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.about__article h1 {
+		font-size: 28px;
+		padding: 20px;
+	}
+	
+	.about__article p {
+		font-size: 18px;
+		margin: 30px 0;
+	}
+	
+	.about__article a {
+		font-size: 18px;
+	}
+
+	.feedback__slider, .feedback__workers {
+		flex-basis: 100%;
+		height: 300px;
+		margin-bottom: 50px;
+	}
+	
+	.feedback__workers {
+		margin: 0 !important;
+		margin-bottom: 50px !important;
+		height: 350px;
+	}
+
+	.footer__form__links {
+		width: 100%;
+	}
+
+	.contacts {
+		flex-wrap: wrap;
+	}
+
+	.contacts__details {
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+
+	form {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	footer > nav {
+		flex-basis: 100%;
+		flex-wrap: wrap;
+	}
+
+	footer > nav > div {
+		flex-basis: 100%;
+		margin-bottom: 50px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	footer > nav > div > h2 {
+		text-align: right;
+		flex-basis: 100%;
+		border-bottom: 2px solid white
+	}
+
+	footer > nav > div > h2 > span {
+		border-bottom: none;
+	}
+
+	footer > nav > div > a {
+		padding-bottom: 3px;
+		margin: 15px 0;
+		flex-basis: 55%;
+	}
+}

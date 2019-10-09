@@ -1,0 +1,128 @@
+.slider__services {
+	position: relative;
+	overflow: hidden;
+	background-color: #3D3D3D;
+}
+
+.slider__wrapper {
+	display: flex;
+	transition: transform 0.6s ease;
+}
+
+.slider__item {
+	flex: 0 0 33.3333%;
+	max-width: 33.3333%;
+}
+
+.slider__control {
+	position: absolute;
+	top: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	color: #fff;
+	text-align: center;
+	opacity: 0.5;
+	height: 50px;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	opacity: .9;
+}
+
+.slider__control_left {
+	left: 0;
+}
+
+.slider__control_right {
+	right: 0;
+}
+
+.slider__control::before {
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.services__slider-content {
+  padding: 200px 50px 100px 50px;
+  text-align: center;
+  color: white;
+}
+
+.slider__item:nth-of-type(even) {
+	background-color: #2098d1;
+}
+
+.services__slider-content h2 {
+  text-transform: uppercase;
+  margin: 100px 0 30px 0;
+  font-size: 36px;
+}
+
+.services__slider-content p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+
+.services__slider-content a {
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  text-transform: uppercase;
+  background-color: #959595;
+}
+
+@media screen and (max-width: 1150px) {
+	.services__slider-content {
+		padding: 100px 20px;
+		text-align: center;
+		color: white;
+	}
+
+}
+
+@media screen and (max-width: 970px) {
+	.services__slider-content {
+		padding: 50px 30px;
+		text-align: center;
+		color: white;
+	}
+
+	.services__slider-content h2 {
+		margin-top: 30px;
+		font-size: 28px;
+		line-height: 1.2;
+	}
+
+	.services__slider-content p {
+		font-size: 18px;
+		margin-bottom: 50px;
+	}
+	
+	.services__slider-content a {
+		font-size: 18px;
+		padding: 10px 30px;
+	}
+}

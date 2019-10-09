@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<script src="libs/fontawesome-free-5.10.2-web/js/all.js"></script>
+	<script src="libs/jquery-3.4.1.min.js"></script>
+
+	<link rel="stylesheet" href="css/fonts/fonts.css">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/servicesSlider.css">
+
+	<link rel="stylesheet" href="css/media/media.css">
+
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="main">
+
+		<header class="row">
+			<a href="#" class="logo">lo<span>go</span></a>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span id="span1"></span>
+				<span id="span2"></span>
+				<span id="span3"></span>
+			</div>
+			<nav class="row main__nav">
+				<a href="#" class="radial-out main__nav-item">Home</a>
+				<a href="#" class="radial-out main__nav-item">About</a>
+				<div class="nav-dropdown main__nav-item">
+						<a href="#" class="radial-out">Services <i class="fas fa-caret-down"></i></a>
+						<div class="dropdown-links">
+							<a href="#" class="radial-out">Services1</a>
+							<a href="#" class="radial-out">Services2</a>
+							<a href="#" class="radial-out">Services3</a>
+							<a href="#" class="radial-out">Services4</a>
+							<a href="#" class="radial-out">Services5</a>
+						</div>
+				</div>
+				<a href="#" class="radial-out main__nav-item">Portfolio</a>
+				<div class="nav-dropdown main__nav-item">
+						<a href="#" class="radial-out">Shop <i class="fas fa-caret-down"></i></a>
+						<div class="dropdown-links">
+							<a href="#" class="radial-out">Shop1</a>
+							<a href="#" class="radial-out">Shop2</a>
+							<a href="#" class="radial-out">Shop3</a>
+							<a href="#" class="radial-out">Shop4</a>
+							<a href="#" class="radial-out">Shop5</a>
+						</div>
+				</div>
+				<a href="#" class="radial-out main__nav-item">Contact</a>
+				<a href="#" class="radial-out main__nav-item">Pages</a>
+				<div class="main__social-icons row">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-google-plus"></i></a>
+				</div>
+			</nav>
+		</header>
+
+		<div class="slider-container">
+			<div class="slider-control left inactive"></div>
+			<div class="slider-control right"></div>
+			<ul class="slider-pagi"></ul>
+			<div class="slider">
+				<div class="slide slide-0 active">
+					<div class="slide__bg"></div>
+					<div class="slide__content">
+						<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+							<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+						</svg>
+						<div class="slide__text">
+							<h2 class="slide__text-heading">Project name 1</h2>
+							<p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+							<a class="slide__text-link">Project link</a>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide-1 ">
+					<div class="slide__bg"></div>
+					<div class="slide__content">
+						<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+							<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+						</svg>
+						<div class="slide__text">
+							<h2 class="slide__text-heading">Project name 2</h2>
+							<p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+							<a class="slide__text-link">Project link</a>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide-2">
+					<div class="slide__bg"></div>
+					<div class="slide__content">
+						<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+							<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+						</svg>
+						<div class="slide__text">
+							<h2 class="slide__text-heading">Project name 3</h2>
+							<p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+							<a class="slide__text-link">Project link</a>
+						</div>
+					</div>
+				</div>
+				<div class="slide slide-3">
+					<div class="slide__bg"></div>
+					<div class="slide__content">
+						<svg class="slide__overlay" viewBox="0 0 720 405" preserveAspectRatio="xMaxYMax slice">
+							<path class="slide__overlay-path" d="M0,0 150,0 500,405 0,405" />
+						</svg>
+						<div class="slide__text">
+							<h2 class="slide__text-heading">Project name 4</h2>
+							<p class="slide__text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio veniam minus illo debitis nihil animi facere, doloremque voluptate tempore quia.</p>
+							<a class="slide__text-link">Project link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="about">
+		<div class="row">
+			<div class="about__bg-image"></div>
+			<div class="about__article">
+				<h1>a little about us</h1>
+				<p>
+					We are  a company based in india with the motto “Digitalally Designed India”. We are  a company based in india with the motto “Digitalally  Designed India”. We are  a company based in india with the motto “Digitalally  Designed India”.
+				</p>
+				<p>
+					We are  a company based in india with the motto “Digitalally Designed India”. We are  a company based in india with the motto “Digitalally Designed India”.  We are  a company based in 
+					India with the motto “Digitalally Designed India”.  We are  a company based in india with the motto “Digitalally Designed India”.
+				</p>
+				<div class="about-btn">
+					<button class="bubbly-button">Click me!</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="services">
+		<div class="content__header">
+			<div class="content__header-wrapper">
+				<h1>our services</h1>
+			</div>
+		</div>
+		<div class="slider__services">
+			<div class="slider__wrapper">
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+				<div class="slider__item">
+					<div class="services__slider-content">
+						<img src="images/1493843058_Web_Development.png" alt="image">
+						<h2>web development</h2>
+						<p>We provide the best world class web development service We provide the best world class web development service</p>
+						<a href="#">more details</a>
+					</div>
+				</div>
+			</div>
+			<a class="slider__control slider__control_left" href="#" role="button"></a>
+			<a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+		</div>
+	</div>
+
+	<div class="feedback">
+		<div class="content__header">
+			<div class="content__header-wrapper">
+				<h1>feedback</h1>
+			</div>
+		</div>
+		<div class="feedback__content row">
+			<div class="feedback__slider">
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor sit amet.</p>
+					<span>Jack Dee</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem, ipsum?</p>
+					<span>Sara Fisher</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, impedit?</p>
+					<span>Alisa Gillespie</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem, ipsum dolor.</p>
+					<span>Marwa Cooper</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor sit.</p>
+					<span>Ferne Mack</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem.))))</p>
+					<span>Jena Barrera</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+					<span>Dwayne Cotton</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor sit amet.</p>
+					<span>Elvis Pitts</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem, ipsum!!!!</p>
+					<span>Dorian Hume</span>
+				</div>
+				<div class="feedback__slide">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae.</p>
+					<span>Lyla-Rose Nelson</span>
+				</div>
+			</div>
+			<div class="feedback__workers">
+				<div class="feedback__workers__description row">
+					<span>01</span>
+					<span>Imran Khan<br>CEO, Vesso</span>
+				</div>
+			</div>
+			<div class="feedback__workers">
+				<div class="feedback__workers__description row">
+					<span>01</span>
+					<span>Imran Khan<br>CEO, Vesso</span>
+				</div>
+			</div>
+			<div class="feedback__workers">
+				<div class="feedback__workers__description row">
+					<span>01</span>
+					<span>Imran Khan<br>CEO, Vesso</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="clients">
+		<div class="content__header-light">
+			<div class="content__header-wrapper">
+				<h1>clients</h1>
+			</div>
+		</div>
+		<div class="clients__content row">
+			<div class="clients__content-block"><img src="images/2000px-Adobe_Systems_Logo_002.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/Canva-Logo.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/behance-2.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/cisco-logo.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/guideline_based1.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/infosys-logo-PNG.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/invision.png" alt=""></div>
+			<div class="clients__content-block"><img src="images/49803d8eb5ea235a5860ac942caece70_download-png-download-eps-instagram-logo-clipart-png_1024-1024.png" alt=""></div>
+		</div>
+	</div>
+
+	<div class="contacts row">
+		<div class="contacts__details">
+			<h1>Any Queries | Get a quote</h1>
+			<p>If you have any questions or queries regarding our service or pricing don’t worry. Our experts will call you.</p>
+		</div>
+		<form action="#">
+			<input type="text" placeholder="Your name" id="name">
+			<input type="tel" placeholder="Your number" id="tel">
+			<input type="submit" value="Get a call" id="contacts-button">
+		</form>
+	</div>
+
+	<footer class="row">
+		<nav class="row">
+			<div class="footer__block pass">
+				<h2><span>pro</span>duct</h2>
+				<a href="#">Cost & Govermance</a>
+				<a href="#">Security & Complaince</a>
+				<a href="#">Product N</a>
+				<a href="#">Pricing & plans</a>
+			</div>
+			<div class="footer__block pass">
+				<h2><span>lea</span>rn</h2>
+				<a href="#">Articles</a>
+				<a href="#">Register & demo</a>
+				<a href="#">Webinars</a>
+				<a href="#">FAQs</a>
+			</div>
+			<div class="footer__block pass">
+				<h2><span>com</span>pany</h2>
+				<a href="#">About</a>
+				<a href="#">Careers</a>
+				<a href="#">Partners</a>
+				<a href="#">Contact</a>
+			</div>
+		</nav>
+		<div class="footer__form">
+			<div class="footer__form__subscribe">
+				<input type="email" placeholder="Your email" id="email">
+				<input type="submit" value="Subscribe">
+			</div>
+			<div class="footer__form__links">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google-plus"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-facebook"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/mainSlider.js"></script>
+	<script src="js/servicesSlider.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
