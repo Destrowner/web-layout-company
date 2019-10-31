@@ -50,6 +50,19 @@ header {
 }
 
 .logo span {
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.logo span:last-child {
+  color: #CA2349;
+}
+
+.logo:hover span:last-child {
+  color: white;
+}
+
+.logo:hover span:first-child {
   color: #CA2349;
 }
 
@@ -203,6 +216,8 @@ nav a {
 
 .dropdown-links a {
   margin-right: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main__social-icons {
@@ -221,6 +236,12 @@ nav a {
   border-radius: 50%;
   padding: 7px;
   border: 1px solid white;
+  -webkit-transition: background-color 2s;
+  transition: background-color 2s;
+}
+
+.main__social-icons a:hover {
+  background-color: #ff5100;
 }
 
 .main__social-icons a:not(:last-of-type) {
@@ -456,6 +477,28 @@ nav a {
   border-top-right-radius: 5px 4px;
 }
 
+.slider__items {
+  display: none;
+}
+
+.slider__items:nth-child(even) {
+  background-color: #2098D1;
+}
+
+.services__slider-content a {
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+.services__slider-content a:hover {
+  -webkit-box-shadow: 0 0 3px 1px white;
+          box-shadow: 0 0 3px 1px white;
+}
+
+.services__slider-content a:active {
+  background-color: #ff5100;
+}
+
 .feedback__content {
   padding: 50px;
   background-color: #3D3D3D;
@@ -472,6 +515,10 @@ nav a {
   background-position: center center;
   background-size: cover;
   overflow: hidden;
+  -webkit-transition: -webkit-filter .5s;
+  transition: -webkit-filter .5s;
+  transition: filter .5s;
+  transition: filter .5s, -webkit-filter .5s;
 }
 
 .feedback__workers:hover {
@@ -668,6 +715,11 @@ form input:active, form input:hover, form input:focus {
   outline-offset: 0;
 }
 
+form input:focus {
+  -webkit-box-shadow: 0 0 3px 1px white;
+          box-shadow: 0 0 3px 1px white;
+}
+
 form input[type=text] {
   border-radius: 5px 0 0 5px;
   border-right: none;
@@ -683,6 +735,17 @@ form input[type=submit] {
   font-weight: bold;
   cursor: pointer;
   border-color: white;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+form input[type=submit]:active {
+  background-color: #ff5100;
+}
+
+form input[type=submit]:hover {
+  -webkit-box-shadow: 0 0 3px 1px white;
+          box-shadow: 0 0 3px 1px white;
 }
 
 footer {
@@ -766,14 +829,22 @@ footer nav h2 span {
   font-size: 24px;
 }
 
+.footer__form__subscribe input:focus, .footer__form__subscribe input:active, .footer__form__subscribe input:hover {
+  outline-offset: none;
+  outline: none;
+}
+
 .footer__form__subscribe input[type=submit] {
   cursor: pointer;
   position: absolute;
   padding: 21px 20px;
   right: 1px;
   top: 1px;
-  background-color: #0072BC;
+  background-color: #097E89;
   border: none;
+  color: white;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
 }
 
 .footer__form__subscribe input[type=submit]::-webkit-input-placeholder {
@@ -790,6 +861,17 @@ footer nav h2 span {
 
 .footer__form__subscribe input[type=submit]::placeholder {
   color: white;
+}
+
+.footer__form__subscribe input[type=submit]:active {
+  outline: none;
+  outline-offset: none;
+  background-color: #ff5100;
+}
+
+.footer__form__subscribe input[type=submit]:hover {
+  outline: none;
+  outline-offset: none;
 }
 
 .footer__form__subscribe input[type=email] {
@@ -833,11 +915,18 @@ footer nav h2 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
+  line-height: 1;
+  padding: 15px 18px;
   display: inline-block;
   border-radius: 50%;
   background-color: #2E2E2E;
   color: #CCCCCC;
+}
+
+.footer__form__links a:hover {
+  -webkit-filter: brightness(200%);
+          filter: brightness(200%);
+  background-color: #ff5100;
 }
 
 .footer__form__links a svg {
