@@ -39,7 +39,19 @@ header
 	font-size: 2em
 
 	span
+		transition: color .5s
+
+	span:last-child
 		color: #CA2349
+
+	&:hover 
+
+		span:last-child
+			color: white
+
+		span:first-child
+			color: #CA2349
+
 
 .radial-out
   overflow: hidden
@@ -143,6 +155,8 @@ nav
 
 	a
 		margin-right: 20px
+		padding-left: 20px
+		padding-right: 20px
 
 .main__social-icons
 	flex-basis: 12%
@@ -154,6 +168,10 @@ nav
 		border-radius: 50%
 		padding: 7px
 		border: 1px solid white
+		transition: background-color 2s
+
+		&:hover
+			background-color: #ff5100
 
 		&:not(:last-of-type)
 			margin-right: 15px
@@ -318,6 +336,21 @@ nav
 		&::after
 			border-top-right-radius: 5px 4px
 
+.slider__items
+	display: none
+
+	&:nth-child(even)
+		background-color: #2098D1
+
+.services__slider-content a
+	transition: background-color .1s
+
+	&:hover
+		box-shadow: 0 0 3px 1px white
+
+	&:active
+		background-color: #ff5100 
+
 // =============================FEEDBACK
 
 .feedback__content
@@ -333,6 +366,7 @@ nav
 	background-position: center center
 	background-size: cover
 	overflow: hidden
+	transition: filter .5s
 
 	&:hover
 		filter: brightness(80%)
@@ -463,6 +497,9 @@ form
 			outline: none
 			outline-offset: 0
 
+		&:focus
+			box-shadow: 0 0 3px 1px white
+
 form input[type=text]
 	border-radius: 5px 0 0 5px
 	border-right: none
@@ -476,6 +513,13 @@ form input[type=submit]
 	font-weight: bold
 	cursor: pointer
 	border-color: white
+	transition: background-color .1s
+
+	&:active
+		background-color: #ff5100
+
+	&:hover
+		box-shadow: 0 0 3px 1px white
 
 // =========================== FOOTER
 
@@ -540,17 +584,32 @@ footer
 	input
 		font-size: 24px
 
+		&:focus, &:active, &:hover
+			outline-offset: none
+			outline: none
+
 	input[type=submit]
 		cursor: pointer
 		position: absolute
 		padding: 21px 20px
 		right: 1px
 		top: 1px
-		background-color: #0072BC
+		background-color: #097E89
 		border: none
+		color: white
+		transition: background-color .1s
 
 		&::placeholder
 			color: white
+
+		&:active
+			outline: none
+			outline-offset: none 
+			background-color: #ff5100
+
+		&:hover
+			outline: none
+			outline-offset: none
 
 	input[type=email]
 		padding: 20px
@@ -572,11 +631,16 @@ footer
 
 	a
 		display: flex
-		padding: 15px
+		line-height: 1
+		padding: 15px 18px
 		display: inline-block
 		border-radius: 50%
 		background-color: #2E2E2E
 		color: #CCCCCC
+
+		&:hover
+			filter: brightness(200%)
+			background-color: #ff5100
 
 		svg
 			display: inline-block
